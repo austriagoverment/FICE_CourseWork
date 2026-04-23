@@ -1,0 +1,15 @@
+/Users/massivecock2008/Desktop/fice/untitled-folder/nasa_pictures/obj/Debug/net10.0/nasa_pictures.GeneratedMSBuildEditorConfig.editorconfig
+/Users/massivecock2008/Desktop/fice/untitled-folder/nasa_pictures/obj/Debug/net10.0/nasa_pictures.AssemblyInfoInputs.cache
+/Users/massivecock2008/Desktop/fice/untitled-folder/nasa_pictures/obj/Debug/net10.0/nasa_pictures.AssemblyInfo.cs
+/Users/massivecock2008/Desktop/fice/untitled-folder/nasa_pictures/obj/Debug/net10.0/nasa_pictures.csproj.CoreCompileInputs.cache
+/Users/massivecock2008/Desktop/fice/untitled-folder/nasa_pictures/obj/Debug/net10.0/nasa_pictures.sourcelink.json
+/Users/massivecock2008/Desktop/fice/untitled-folder/nasa_pictures/bin/Debug/net10.0/nasa_pictures
+/Users/massivecock2008/Desktop/fice/untitled-folder/nasa_pictures/bin/Debug/net10.0/nasa_pictures.deps.json
+/Users/massivecock2008/Desktop/fice/untitled-folder/nasa_pictures/bin/Debug/net10.0/nasa_pictures.runtimeconfig.json
+/Users/massivecock2008/Desktop/fice/untitled-folder/nasa_pictures/bin/Debug/net10.0/nasa_pictures.dll
+/Users/massivecock2008/Desktop/fice/untitled-folder/nasa_pictures/bin/Debug/net10.0/nasa_pictures.pdb
+/Users/massivecock2008/Desktop/fice/untitled-folder/nasa_pictures/obj/Debug/net10.0/nasa_pictures.dll
+/Users/massivecock2008/Desktop/fice/untitled-folder/nasa_pictures/obj/Debug/net10.0/refint/nasa_pictures.dll
+/Users/massivecock2008/Desktop/fice/untitled-folder/nasa_pictures/obj/Debug/net10.0/nasa_pictures.pdb
+/Users/massivecock2008/Desktop/fice/untitled-folder/nasa_pictures/obj/Debug/net10.0/nasa_pictures.genruntimeconfig.cache
+/Users/massivecock2008/Desktop/fice/untitled-folder/nasa_pictures/obj/Debug/net10.0/ref/nasa_pictures.dll
