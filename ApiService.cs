@@ -13,7 +13,7 @@ namespace nasa_pictures
 
         public async Task<ApiResponse?> GetPictureOfTheDayAsync()
         {
-            string apiUrl = "https://api.nasa.gov/planetary/apod?api_key=BBdMoHggb5emOXNClQmWEXOCCH75I57fmhv38R0w ";
+            string apiUrl = "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY";
             var response = await _httpClient.GetAsync(apiUrl);
 
             if (response.IsSuccessStatusCode)

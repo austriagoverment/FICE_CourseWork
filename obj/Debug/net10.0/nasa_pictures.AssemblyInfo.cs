@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("nasa_pictures")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+758461a7f0b5e6400d2de5225e0ce5a636442b79")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1d65af065f11ad6fa5c61a90f07eb8fdb2662ddc")]
 [assembly: System.Reflection.AssemblyProductAttribute("nasa_pictures")]
 [assembly: System.Reflection.AssemblyTitleAttribute("nasa_pictures")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
