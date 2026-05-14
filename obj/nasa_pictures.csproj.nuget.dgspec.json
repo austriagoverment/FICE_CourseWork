@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/massivecock2008/Desktop/fice/untitled-folder/nasa_pictures/nasa_pictures.csproj": {}
+    "/Users/massivecock2008/Desktop/nasa_pictures/nasa_pictures.csproj": {}
   },
   "projects": {
-    "/Users/massivecock2008/Desktop/fice/untitled-folder/nasa_pictures/nasa_pictures.csproj": {
+    "/Users/massivecock2008/Desktop/nasa_pictures/nasa_pictures.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/massivecock2008/Desktop/fice/untitled-folder/nasa_pictures/nasa_pictures.csproj",
+        "projectUniqueName": "/Users/massivecock2008/Desktop/nasa_pictures/nasa_pictures.csproj",
         "projectName": "nasa_pictures",
-        "projectPath": "/Users/massivecock2008/Desktop/fice/untitled-folder/nasa_pictures/nasa_pictures.csproj",
+        "projectPath": "/Users/massivecock2008/Desktop/nasa_pictures/nasa_pictures.csproj",
         "packagesPath": "/Users/massivecock2008/.nuget/packages/",
-        "outputPath": "/Users/massivecock2008/Desktop/fice/untitled-folder/nasa_pictures/obj/",
+        "outputPath": "/Users/massivecock2008/Desktop/nasa_pictures/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/massivecock2008/.nuget/NuGet/NuGet.Config"
@@ -38,7 +38,7 @@
           "auditLevel": "low",
           "auditMode": "all"
         },
-        "SdkAnalysisLevel": "10.0.100"
+        "SdkAnalysisLevel": "10.0.200"
       },
       "frameworks": {
         "net10.0": {
@@ -59,7 +59,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.101/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.203/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
