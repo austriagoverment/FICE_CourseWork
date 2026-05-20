@@ -1,8 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "M0VUVgsl+QI=",
+  "dgSpecHash": "Tfz0vEHvsgk=",
   "success": true,
   "projectFilePath": "/Users/massivecock2008/Desktop/кр/nasa_pictures.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/massivecock2008/.nuget/packages/dotnetenv/3.2.0/dotnetenv.3.2.0.nupkg.sha512",
+    "/Users/massivecock2008/.nuget/packages/microsoft.extensions.configuration/1.1.2/microsoft.extensions.configuration.1.1.2.nupkg.sha512",
+    "/Users/massivecock2008/.nuget/packages/microsoft.extensions.configuration.abstractions/1.1.2/microsoft.extensions.configuration.abstractions.1.1.2.nupkg.sha512",
+    "/Users/massivecock2008/.nuget/packages/microsoft.extensions.primitives/1.1.1/microsoft.extensions.primitives.1.1.1.nupkg.sha512",
+    "/Users/massivecock2008/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "/Users/massivecock2008/.nuget/packages/netstandard.library/1.6.1/netstandard.library.1.6.1.nupkg.sha512",
+    "/Users/massivecock2008/.nuget/packages/superpower/3.0.0/superpower.3.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

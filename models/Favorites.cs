@@ -2,8 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-
-namespace кр.models
+    
+namespace nasa_pictures.models
 {
     public interface Favourits
     {
