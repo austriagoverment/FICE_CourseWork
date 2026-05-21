@@ -12,5 +12,5 @@ public class Rating
     public int ApodPostId { get; set; }
     public ApodPost? ApodPost { get; set; }
     
-    public int Score { get; set; } // от 1 до 5
+    public int Score { get; set; }
 }

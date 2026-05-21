@@ -21,7 +21,7 @@ public class DailyPostingService : BackgroundService
     {
         _scopeFactory = scopeFactory;
         _bot = bot;
-        _postTime = new TimeOnly(9, 0); // время рассылки — 09:00 UTC
+        _postTime = new TimeOnly(9, 0);
     }
 
     protected override async Task ExecuteAsync(CancellationToken ct)
@@ -29,7 +29,7 @@ public class DailyPostingService : BackgroundService
         while (!ct.IsCancellationRequested)
         {
             TimeSpan delay = GetDelayUntilNextPost();
-            Console.WriteLine($"[DailyPosting] Следующая рассылка через {delay.TotalMinutes:F0} минут.");
+            Console.WriteLine($"[DailyPosting] Наступна розсилка через {delay.TotalMinutes:F0} хвилин.");
             await Task.Delay(delay, ct);
 
             if (!ct.IsCancellationRequested)
@@ -58,7 +58,7 @@ public class DailyPostingService : BackgroundService
         ApodPost? post = await nasaService.GetPictureByDateAsync(today);
         if (post == null)
         {
-            Console.WriteLine("[DailyPosting] Фото дня не найдено или это видео. Рассылка отменена.");
+            Console.WriteLine("[DailyPosting] Фото дня не знайдено або це відео. Розсилка скасована.");
             return;
         }
 
@@ -68,7 +68,7 @@ public class DailyPostingService : BackgroundService
             .ToList();
 
         string avgText = ratings.Count > 0
-            ? $"\n⭐ Средняя оценка: {ratings.Average():F1} ({ratings.Count} оценок)"
+            ? $"\n⭐ Середня оцінка: {ratings.Average():F1} ({ratings.Count} оцінок)"
             : "";
 
         string caption = $"🌌 <b>Фото дня — {post.Date}</b>\n\n<b>{post.Title}</b>{avgText}";
@@ -77,13 +77,13 @@ public class DailyPostingService : BackgroundService
         {
             new[]
             {
-                TelegramInlineButton.WithCallbackData("❤️ В избранное", $"fav_{post.Date}"),
-                TelegramInlineButton.WithCallbackData("⭐ Оценить", $"askrate_{post.Date}")
+                TelegramInlineButton.WithCallbackData("❤️ В збережене", $"fav_{post.Date}"),
+                TelegramInlineButton.WithCallbackData("⭐ Оцінити", $"askrate_{post.Date}")
             }
         });
 
         var users = db.Users.ToList();
-        Console.WriteLine($"[DailyPosting] Рассылаю {users.Count} пользователям...");
+        Console.WriteLine($"[DailyPosting] розсилака {users.Count} користувачам");
 
         int success = 0, failed = 0;
 
@@ -103,13 +103,11 @@ public class DailyPostingService : BackgroundService
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"[DailyPosting] Не удалось отправить пользователю {user.ChatId}: {ex.Message}");
+                Console.WriteLine($"[DailyPosting] помилка {user.ChatId}: {ex.Message}");
                 failed++;
             }
 
-            await Task.Delay(100, ct); // пауза между отправками чтобы не попасть в rate limit
+            await Task.Delay(100, ct);
         }
-
-        Console.WriteLine($"[DailyPosting] Готово. Успешно: {success}, ошибок: {failed}.");
     }
 }

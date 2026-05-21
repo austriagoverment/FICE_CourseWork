@@ -26,7 +26,7 @@ public class NasaApiService
 
         if (_cache.TryGetValue(cacheKey, out ApodPost? cachedPost))
         {
-            Console.WriteLine("Взято из кэша!");
+            Console.WriteLine("Взято з кеша");
             return cachedPost;
         }
 

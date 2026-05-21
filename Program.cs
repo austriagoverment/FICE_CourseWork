@@ -52,7 +52,7 @@ if (!isMigration)
         cts.Token
     );
 
-    Console.WriteLine("Бот успішно запущений!");
+    Console.WriteLine("бот працює");
 }
 
 app.Run();
