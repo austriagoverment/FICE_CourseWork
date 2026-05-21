@@ -1,15 +1,12 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
 
-namespace nasa_pictures.models
+namespace nasa_pictures.Models;
+
+public class User
 {
-    public interface User
-    {
-        int Id { get; set; }
-        string TelegramChatId { get; set; }
-        string Username { get; set; }
-        string CreatedAt { get; set; }
-    }
+    [Key]
+    public int Id { get; set; }
+    [Required]
+    public long ChatId { get; set; }
+    public string? Username { get; set; }
 }

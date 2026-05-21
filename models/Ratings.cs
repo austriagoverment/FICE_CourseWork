@@ -1,15 +1,16 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
 
-namespace nasa_pictures.models
+namespace nasa_pictures.Models;
+
+public class Rating
 {
-    public interface Rating
-    {
-        int Id { get; set; }
-        int UserId { get; set; }
-        int ApodPostId { get; set; }
-        int Scrore { get; set; }
-    }
+    [Key]
+    public int Id { get; set; }
+    public int UserId { get; set; }
+    public User? User { get; set; }
+    
+    public int ApodPostId { get; set; }
+    public ApodPost? ApodPost { get; set; }
+    
+    public int Score { get; set; } // от 1 до 5
 }

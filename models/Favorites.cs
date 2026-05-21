@@ -1,15 +1,14 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-    
-namespace nasa_pictures.models
+using System.ComponentModel.DataAnnotations;
+
+namespace nasa_pictures.Models;
+
+public class Favorite
 {
-    public interface Favourits
-    {
-       int Id { get; set; }
-       int UserId { get; set; }
-       int ApodPostId { get; set; }
-        
-    }
+    [Key]
+    public int Id { get; set; }
+    public int UserId { get; set; }
+    public User? User { get; set; }
+    
+    public int ApodPostId { get; set; }
+    public ApodPost? ApodPost { get; set; }
 }
